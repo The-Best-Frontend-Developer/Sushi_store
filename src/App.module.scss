@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, Link {
+  font-family: var(--font), sans-serif;
+  color: red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../public/fonts/DINPro.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../public/fonts/DINPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DinPro';
+  src: url('../public/fonts/DINPro-Light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2.5rem;
+
+  max-width: calc(107.5rem + clamp(1rem, -0.2rem + 6vw, 6.25rem) * 2);
+  padding-inline: clamp(1rem, -0.2rem + 6vw, 6.25rem);
+  margin-inline: auto;
+}
+
+// !!!!!!!!!!!!!!!!!
+.checkbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.add {
+  position: absolute;
+  top: 70px;
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+.abso {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
